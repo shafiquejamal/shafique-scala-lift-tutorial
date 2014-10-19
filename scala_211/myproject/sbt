@@ -1,0 +1,1 @@
+java -Dfile.encoding=UTF8 -server -noverify -javaagent:/Applications/eclipse/plugins/org.zeroturnaround.eclipse.embedder_5.6.3.SR1-201409161234/jrebel/jrebel.jar -Drebel.lift_plugin=true -Xmx1024M -Xss2M -XX:MaxPermSize=512m -XX:+CMSClassUnloadingEnabled -jar `dirname $0`/sbt-launch-0.13.1.jar "$@"
